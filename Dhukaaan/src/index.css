@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.Menu {
+  @apply cursor-pointer hover:scale-125 transition-all ease-in-out duration-150 text-pink-950;
+}
+.Login {
+  @apply border p-2 w-[100px] border-gray-400 hover:bg-slate-50 rounded-3xl;
+}
