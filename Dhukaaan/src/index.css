@@ -3,8 +3,11 @@
 @tailwind utilities;
 
 .Menu {
-  @apply cursor-pointer hover:scale-125 transition-all ease-in-out duration-150 text-pink-950;
+  @apply cursor-pointer text-lg hover:scale-125 transition-all ease-in-out duration-150 text-pink-950;
 }
 .Login {
-  @apply border p-2 w-[100px] border-gray-400 hover:bg-slate-50 rounded-3xl;
+  @apply border  p-2 w-[100px] text-pink-950 border-pink-950 hover:bg-pink-800 hover:text-white active:bg-pink-950 active:text-white rounded-3xl;
+}
+.cart-count {
+  @apply w-[14px] h-[18px] flex justify-center text-center items-center -mt-[28px] text-sm -ml-[31px] rounded-3xl text-white bg-red-500;
 }
