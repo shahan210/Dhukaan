@@ -11,3 +11,8 @@
 .cart-count {
   @apply w-[14px] h-[18px] flex justify-center text-center items-center -mt-[28px] text-sm -ml-[31px] rounded-3xl text-white bg-red-500;
 }
+.briem-hand {
+  font-family: "Alex Brush", cursive;
+  font-weight: 800;
+  font-style: normal;
+}

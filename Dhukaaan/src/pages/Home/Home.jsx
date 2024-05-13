@@ -1,15 +1,22 @@
+import { motion } from "framer-motion";
 import React from "react";
-import Dress from "../../assets/gif/price.gif";
-import Hero from "../../assets/Png/cheerful.png";
-import Hero2 from "../../assets/Png/portrait.png";
-import Hero3 from "../../assets/Png/portrait-male.png";
-import Hero4 from "../../assets/Png/full.png";
-import { ReactTyped } from "react-typed";
 import { FaArrowRight } from "react-icons/fa6";
+import { ReactTyped } from "react-typed";
+import Hero from "../../assets/Png/cheerful.png";
+import Hero4 from "../../assets/Png/full.png";
+import Hero3 from "../../assets/Png/portrait-male.png";
+import Hero2 from "../../assets/Png/portrait.png";
+
 const Home = () => {
+
   return (
-    <section className="grid grid-cols-2 h-full p-4 pb-[4.12rem] bg-gradient-to-r from-pink-100 to-rose-300">
-      <div className="flex justify-center relative items-center flex-col h-full">
+    <section className="grid grid-cols-2 h-full p-4 pb-[4.75rem] bg-gradient-to-r from-pink-100 to-rose-300">
+      <motion.div
+        initial={{ x: 100, opacity: 0, scale: 1 }}
+        animate={{ x: 0, opacity: 1, scale: 1 }}
+        transition={{ duration: 1 }}
+        className="flex justify-center relative items-center flex-col h-full"
+      >
         <div className=" text-pink-950 text-5xl font-bold">
           <div className="mb-3 ">New</div>
           <div className="mb-3">Collections</div>
@@ -29,8 +36,14 @@ const Home = () => {
             Latest Collection <FaArrowRight className="ml-4 mt-1" />
           </button>
         </div>
-      </div>
-      <div className="flex justify-center items-center relative h-full">
+      </motion.div>
+
+      <motion.div
+        initial={{ x: -100, opacity: 0, scale: 1 }}
+        animate={{ x: 0, opacity: 1, scale: 1 }}
+        transition={{ duration: 1 }}
+        className="flex justify-center items-center relative h-full"
+      >
         <img
           src={Hero3}
           alt="model"
@@ -43,7 +56,7 @@ const Home = () => {
           className="w-[200px] h-[325px] -ml-48 mt-40 z-10"
         />
         <img src={Hero2} alt="model" className="w-[350px] h-[525px] -ml-32" />
-      </div>
+      </motion.div>
     </section>
   );
 };
